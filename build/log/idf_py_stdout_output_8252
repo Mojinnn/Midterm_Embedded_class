@@ -1,0 +1,414 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Sep 30 2026 10:11:49[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c72ch ( 50988) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001c754 vaddr=3fc8e800 size=01778h (  6008) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001ded4 vaddr=40380000 size=02144h (  8516) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1dd64h (122212) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0003dd8c vaddr=40382144 size=0c5d4h ( 50644) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     midterm_project[0m
+[0;32mI (187) app_init: App version:      v5.3.1-dirty[0m
+[0;32mI (192) app_init: Compile time:     Oct  2 2026 09:05:21[0m
+[0;32mI (198) app_init: ELF file SHA256:  baaadaca8...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (213) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FC90EB0 len 0002F150 (188 KiB): RAM[0m
+[0;32mI (236) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (243) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (250) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (257) spi_flash: detected chip: generic[0m
+[0;32mI (261) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (278) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (287) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (301) main_task: Calling app_main()[0m
+[0;32mI (301) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (311) gpio: GPIO[5]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (321) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (331) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (561) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+DHT raw: 59 7 32 9 107 -> 329
+Temp = 329
+[0;32mI (591) main_task: Returned from app_main()[0m
+Light = 4095
+Light = 4095
+DHT raw: 59 8 32 9 108 -> 329
+Light = 4095
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 8 32 9 108 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 8 32 9 108 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 8 32 9 108 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 8 32 9 108 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 7 32 9 107 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 7 32 9 107 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 7 32 9 107 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 7 32 9 107 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 8 32 9 108 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 59 8 32 9 108 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 60 7 32 9 108 -> 329
+Temp = 329
+Light = 4095
+Light = 4095
+DHT raw: 66 9 33 0 108 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 66 5 33 0 104 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 66 5 33 0 104 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 68 4 33 0 105 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 68 4 33 0 105 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 67 9 33 0 109 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 67 5 33 0 105 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 66 9 33 0 108 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 66 4 33 0 103 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 65 9 33 0 107 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 65 7 33 0 105 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 65 2 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 64 8 33 0 105 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 64 4 33 0 101 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 64 0 33 0 97 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 63 7 33 0 103 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 63 4 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 63 2 33 0 98 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 62 9 33 0 104 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 62 7 33 0 102 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 62 5 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 62 3 33 0 98 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 62 1 33 0 96 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 61 9 33 0 103 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 61 8 33 0 102 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 61 7 33 1 102 -> 331
+Temp = 331
+Light = 4095
+Light = 4095
+DHT raw: 61 6 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 61 5 33 0 99 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 61 4 33 0 98 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 61 3 33 0 97 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 61 2 33 0 96 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 61 1 33 0 95 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 61 0 33 0 94 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 9 33 0 102 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 9 33 0 102 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 8 33 0 101 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 7 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 6 33 0 99 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 6 33 0 99 -> 330
+Light = 4095
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 5 33 0 98 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 5 33 0 98 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 5 33 1 99 -> 331
+Temp = 331
+Light = 4095
+Light = 4095
+DHT raw: 60 4 33 0 97 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 4 33 0 97 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 3 33 0 96 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 3 33 0 96 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 2 33 0 95 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 2 33 0 95 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 1 33 0 94 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 1 33 0 94 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 1 33 0 94 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 0 33 0 93 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 0 33 0 93 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 0 33 0 93 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 60 0 33 0 93 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 9 33 0 101 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 9 33 0 101 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 9 33 1 102 -> 331
+Temp = 331
+Light = 4095
+Light = 4095
+DHT raw: 59 9 33 0 101 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 9 33 0 101 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 9 33 0 101 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 9 33 0 101 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 9 33 0 101 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 0 100 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 8 33 1 101 -> 331
+Temp = 331
+Light = 4095
+Light = 4095
+DHT raw: 59 7 33 0 99 -> 330
+Temp = 330
+Light = 4095
+Light = 4095
+DHT raw: 59 7 33 0 99 -> 330
+Temp = 330
+Light = 4095
+Light = 4095

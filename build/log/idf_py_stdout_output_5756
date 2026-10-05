@@ -1,0 +1,28 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.3.1\WorkSpace\Embedded_class\midterm_project\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5180 bytes. 0x2e80 bytes (36%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/sensor.c.obj
+In file included from D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/main.h:22,
+                 from D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/sensor.h:1,
+                 from D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/sensor.c:1:
+D:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/sensor.c: In function 'ldr_init':
+D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/sensor.c:8:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+    8 |     adc1_config_channel_atten(LDR_ADC_CHANNEL, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from D:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from D:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:15:
+D:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable midterm_project.elf
+FAILED: midterm_project.elf 
+cmd.exe /C "cd . && D:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe -march=rv32imc_zicsr_zifencei -nostartfiles -march=rv32imc_zicsr_zifencei --specs=nosys.specs    -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32C3=0 -Wl,--Map=D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/build/midterm_project.map -Wl,--no-warn-rwx-segments -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T rom.api.ld -T esp32c3.peripherals.ld -T esp32c3.rom.ld -T esp32c3.rom.api.ld -T esp32c3.rom.libgcc.ld -T esp32c3.rom.version.ld -T esp32c3.rom.eco3.ld -T esp32c3.rom.newlib.ld -T memory.ld -T sections.ld @CMakeFiles\midterm_project.elf.rsp -o midterm_project.elf  && cd ."
+D:/Espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/13.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(main.c.obj): in function `app_main':
+D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/main.c:135:(.text.app_main+0x20): undefined reference to `dht22_init'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,660 @@
+�x�x�x��x�x���ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Sep 30 2026 10:11:49[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c70ch ( 50956) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001c734 vaddr=3fc8e800 size=01778h (  6008) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001deb4 vaddr=40380000 size=02164h (  8548) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1dfa0h (122784) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0003dfc8 vaddr=40382164 size=0c5b4h ( 50612) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     midterm_project[0m
+[0;32mI (187) app_init: App version:      v5.3.1-dirty[0m
+[0;32mI (192) app_init: Compile time:     Oct  2 2026 09:05:21[0m
+[0;32mI (198) app_init: ELF file SHA256:  2fac6fa4b...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (213) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FC90EB0 len 0002F150 (188 KiB): RAM[0m
+[0;32mI (236) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (243) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (250) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (258) spi_flash: detected chip: generic[0m
+[0;32mI (261) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (279) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (287) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (301) main_task: Calling app_main()[0m
+[0;32mI (301) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (311) gpio: GPIO[5]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (321) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (331) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (561) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Temp = 0
+Light = 4095
+[0;32mI (581) main_task: Returned from app_main()[0m
+Light = 4095
+24 23 70 24 69 70 69 71 24 23 24 24 24 23 24 24 25 23 24 69 70 69 24 25 24 25 24 24 24 24 24 25 24 70 23 24 69 24 69 70 
+DHT11: 47 0 28 0 75
+Light = 542
+Temp = 280
+Light = 2316
+Light = 4095
+23 24 70 24 69 70 69 71 24 23 24 23 25 23 24 24 24 23 24 69 70 69 24 25 24 24 24 24 24 24 24 25 24 71 23 24 69 24 69 69 
+DHT11: 47 0 28 0 75
+Temp = 280
+Light = 2735
+Light = 253
+24 23 70 24 70 70 69 71 24 24 24 24 24 24 25 25 24 24 24 70 70 69 24 24 24 23 24 23 24 23 24 24 24 70 24 24 70 24 69 70 
+DHT11: 47 0 28 0 75
+Temp = 280
+Light = 106
+Light = 1050
+23 24 69 24 69 69 70 70 24 23 24 24 24 23 24 24 25 23 24 69 69 70 23 25 24 24 23 24 23 25 23 25 23 70 23 24 70 24 70 68 
+DHT11: 47 0 28 0 75
+Temp = 280
+Light = 3994
+Light = 3388
+24 23 71 24 70 70 69 71 24 24 24 24 24 24 24 25 24 24 24 70 70 69 25 24 24 23 24 23 24 23 24 24 24 69 25 24 70 24 69 69 
+DHT11: 47 0 28 0 75
+Temp = 280
+Light = 408
+Light = 62
+23 24 69 24 69 69 70 70 24 23 25 23 24 23 24 25 24 23 24 69 69 70 23 26 23 24 23 24 24 24 23 25 23 70 24 24 69 23 70 68 
+DHT11: 47 0 28 0 75
+Temp = 280
+Light = 1016
+Light = 4074
+24 23 70 24 69 70 69 71 25 24 24 24 24 24 24 25 24 24 24 70 70 69 24 24 24 23 25 23 24 23 24 25 24 69 24 24 70 24 69 70 
+DHT11: 47 0 28 0 75
+Temp = 280
+Light = 2778
+Light = 207
+23 24 69 24 69 69 70 70 24 24 24 23 24 23 24 24 24 23 24 69 69 71 24 25 23 24 24 24 23 24 23 26 23 70 23 24 69 23 70 69 
+DHT11: 47 0 28 0 75
+Temp = 280
+Light = 217
+Light = 1471
+24 23 70 24 70 70 69 71 24 24 24 24 24 25 24 25 24 24 24 70 70 69 24 24 24 23 24 23 24 23 24 24 24 69 24 24 70 24 69 70 
+DHT11: 47 0 28 0 75
+Temp = 280
+Light = 4058
+Light = 1213
+Temp = 0
+Light = 89
+Light = 640
+Temp = 0
+Light = 2911
+Light = 3595
+Temp = 0
+Light = 697
+Light = 631
+28 28 75 28 75 75 74 78 29 27 28 28 28 28 28 30 28 28 28 74 76 27 29 31 28 28 28 28 28 74 75 78 28 75 28 28 74 76 75 28 
+DHT11: 47 0 24 7 78
+Temp = 240
+Light = 1098
+Light = 3631
+Temp = 0
+Light = 3469
+Light = 506
+Temp = 0
+Light = 40
+Light = 842
+Temp = 0
+Light = 3483
+Light = 3770
+Temp = 0
+Light = 813
+Light = 427
+Temp = 0
+Light = 588
+Light = 2264
+Temp = 0
+Light = 4012
+Light = 2200
+Temp = 0
+Light = 204
+Light = 167
+Temp = 0
+Light = 205
+Light = 3676
+Temp = 0
+Light = 2078
+Light = 269
+Temp = 0
+Light = 0
+Light = 942
+Temp = 0
+Light = 4095
+Light = 3835
+Temp = 0
+Light = 0
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Sep 30 2026 10:11:49[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c70ch ( 50956) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001c734 vaddr=3fc8e800 size=01778h (  6008) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001deb4 vaddr=40380000 size=02164h (  8548) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1dfa0h (122784) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0003dfc8 vaddr=40382164 size=0c5b4h ( 50612) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     midterm_project[0m
+[0;32mI (187) app_init: App version:      v5.3.1-dirty[0m
+[0;32mI (192) app_init: Compile time:     Oct  2 2026 09:05:21[0m
+[0;32mI (198) app_init: ELF file SHA256:  2fac6fa4b...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (213) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FC90EB0 len 0002F150 (188 KiB): RAM[0m
+[0;32mI (236) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (243) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (250) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (258) spi_flash: detected chip: generic[0m
+[0;32mI (261) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (279) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (287) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (301) main_task: Calling app_main()[0m
+[0;32mI (301) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (311) gpio: GPIO[5]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (321) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (331) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (561) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Temp = 0
+Light = 297
+[0;32mI (581) main_task: Returned from app_main()[0m
+Light = 56
+Light = 3943
+Temp = 0
+Light = 743
+Light = 5
+Temp = 0
+Light = 493
+Light = 2010
+26 28 74 29 75 75 28 78 28 28 28 28 28 28 27 32 27 28 28 75 75 27 76 77 28 27 29 27 29 74 75 79 27 75 28 28 74 75 75 74 
+DHT11: 45 0 27 7 79
+Temp = 270
+Light = 4088
+Light = 3115
+Temp = 0
+Light = 448
+Light = 44
+Temp = 0
+Light = 207
+Light = 190
+Temp = 0
+Light = 190
+Light = 200
+Temp = 0
+Light = 189
+Light = 199
+Temp = 0
+Light = 201
+Light = 191
+Temp = 0
+Light = 201
+Light = 198
+Temp = 0
+Light = 206
+Light = 200
+Temp = 0
+Light = 204
+Light = 201
+Temp = 0
+Light = 191
+Light = 205
+Temp = 0
+Light = 205
+Light = 204
+Temp = 0
+Light = 4095
+Light = 1836
+Temp = 0
+Light = 23
+Light = 490
+28 28 74 75 29 27 29 31 29 27 29 27 29 27 29 31 28 28 29 74 75 74 28 30 28 28 28 28 28 28 28 31 29 74 28 28 74 75 28 29 
+DHT11: 48 0 28 0 76
+Temp = 280
+Light = 2796
+Light = 4095
+29 27 75 75 28 28 28 78 28 28 28 28 28 28 28 32 27 29 27 75 74 76 28 31 28 28 28 27 28 27 28 30 28 74 28 27 75 74 29 75 
+DHT11: 49 0 28 0 77
+Temp = 280
+Light = 855
+Light = 29
+28 28 75 75 28 28 28 78 29 27 29 27 29 27 29 31 29 27 29 74 75 74 27 31 27 29 27 29 27 29 27 78 28 75 27 29 74 75 75 28 
+DHT11: 49 0 28 1 78
+Temp = 280
+Light = 732
+Light = 3312
+28 28 75 75 27 28 74 32 28 28 28 28 28 28 27 32 27 28 28 75 74 75 28 30 28 28 28 28 28 28 28 77 28 74 28 28 75 75 74 76 
+DHT11: 50 0 28 1 79
+Temp = 280
+Light = 3756
+Light = 554
+27 28 74 75 29 27 29 77 29 27 29 27 28 28 28 31 29 27 29 74 75 74 28 32 27 29 27 29 28 28 28 78 28 75 27 29 74 75 75 28 
+DHT11: 49 0 28 1 78
+Temp = 280
+Light = 25
+Light = 926
+29 27 76 75 27 29 74 78 28 28 28 28 27 28 27 32 28 28 28 75 28 76 75 30 28 28 28 28 28 74 75 31 29 75 28 28 74 75 74 75 
+DHT11: 51 0 22 6 79
+Temp = 220
+Light = 2667
+Light = 4095
+27 28 74 28 28 28 28 32 27 29 27 29 27 29 27 32 28 28 28 75 75 74 28 31 29 27 29 27 29 27 29 77 29 27 76 75 74 75 27 76 
+DHT11: 32 0 28 1 61
+Temp = 280
+Light = 694
+Light = 4
+29 29 75 74 29 27 29 77 28 28 28 28 27 29 27 32 28 28 28 75 74 75 28 32 27 29 27 28 28 28 74 31 29 74 28 28 75 74 75 76 
+DHT11: 49 0 28 2 79
+Temp = 280
+Light = 680
+Light = 3179
+27 28 74 75 29 27 29 77 29 27 29 27 29 27 29 31 28 28 28 74 76 75 28 32 27 28 28 28 28 28 74 32 28 75 27 29 74 75 75 75 
+DHT11: 49 0 28 2 79
+Temp = 280
+Light = 4095
+Light = 876
+28 28 75 75 27 28 27 78 27 28 28 28 28 28 28 32 27 29 27 75 74 75 29 31 28 27 28 27 29 27 75 31 29 74 28 28 75 75 74 76 
+DHT11: 49 0 28 2 79
+Temp = 280
+Light = 0
+Light = 651
+28 28 74 76 28 28 28 78 28 28 28 28 28 28 28 30 28 28 28 74 75 75 28 32 28 28 28 28 28 28 75 32 28 75 28 28 74 75 75 75 
+DHT11: 49 0 28 2 79
+Temp = 280
+Light = 3304
+Light = 4094
+28 28 75 75 27 29 27 79 27 29 27 29 27 29 27 32 28 28 28 75 74 75 28 31 29 27 29 27 29 27 76 77 28 74 28 75 27 28 28 29 
+DHT11: 49 0 28 3 80
+Temp = 280
+Light = 572
+Light = 33
+27 28 74 76 28 28 28 78 28 28 28 28 29 27 29 31 28 28 28 74 75 74 27 31 27 29 27 29 27 29 74 79 27 75 28 75 29 27 29 28 
+DHT11: 49 0 28 3 80
+Temp = 280
+Light = 927
+Light = 4042
+28 28 75 75 27 29 27 79 27 29 27 29 27 29 27 32 28 28 28 75 74 75 28 31 28 27 28 27 28 27 75 78 28 74 28 75 27 28 27 29 
+DHT11: 49 0 28 3 80
+Temp = 280
+Light = 3016
+Light = 126
+27 29 74 75 28 28 28 78 29 27 29 27 29 27 29 31 28 28 29 74 75 74 27 32 28 28 28 28 28 28 74 78 28 75 27 75 29 27 29 28 
+DHT11: 49 0 28 3 80
+Temp = 280
+Light = 346
+Light = 2750
+Temp = 0
+Light = 4095
+Light = 345
+Temp = 0
+Light = 156
+Light = 2139
+Temp = 0
+Light = 4095
+Light = 591
+27 28 74 28 75 74 75 78 28 28 29 28 29 28 29 32 28 28 28 75 74 75 27 31 27 28 27 29 27 29 74 79 28 74 29 27 75 75 75 29 
+DHT11: 47 0 28 3 78
+Temp = 280
+Light = 72
+Light = 1406
+29 27 75 75 27 29 27 32 28 28 27 28 27 29 27 32 28 28 28 75 74 75 29 32 28 29 28 29 28 29 75 78 28 74 29 27 75 75 74 75 
+DHT11: 48 0 28 3 79
+Temp = 280
+Light = 4095
+Light = 1303
+27 28 74 75 29 27 29 31 28 28 29 27 29 27 29 31 28 27 29 74 75 74 29 31 28 28 28 28 28 74 27 32 28 75 27 76 27 29 27 29 
+DHT11: 48 0 28 4 80
+Temp = 280
+Light = 0
+Light = 986
+Temp = 0
+Light = 4095
+Light = 1479
+27 29 74 28 75 74 28 31 28 27 28 27 28 27 29 30 28 28 28 74 75 75 28 32 27 29 27 29 27 75 28 32 27 75 28 28 74 75 29 28 
+DHT11: 44 0 28 4 76
+Temp = 280
+Light = 268
+Light = 1180
+Temp = 0
+Light = 3706
+Light = 2703
+Temp = 0
+Light = 89
+Light = 156
+Temp = 0
+Light = 1837
+Light = 2333
+27 29 74 75 28 28 28 31 29 27 29 27 29 27 29 31 28 28 28 75 75 74 28 32 29 28 29 28 75 29 27 79 27 75 28 75 28 75 29 74 
+DHT11: 48 0 28 9 85
+Temp = 280
+Light = 1080
+Light = 0
+Temp = 0
+Light = 490
+Light = 3118
+Temp = 0
+Light = 4095
+Light = 663
+28 28 75 75 27 29 27 32 28 28 28 28 28 28 27 32 27 28 27 75 74 75 28 79 28 28 28 28 28 28 28 78 28 74 29 27 75 76 74 28 
+DHT11: 48 0 29 1 78
+Temp = 290
+Light = 701
+Light = 1053
+27 28 74 75 29 27 29 31 28 28 28 28 28 28 28 31 29 27 29 74 75 74 28 78 27 28 27 28 28 28 74 32 28 75 27 29 74 75 75 75 
+DHT11: 48 0 29 2 79
+Temp = 290
+Light = 2029
+Light = 2104
+28 27 75 75 28 75 27 79 27 29 27 29 27 29 27 32 27 28 27 75 75 74 28 78 28 27 28 27 28 74 29 78 27 75 27 75 28 75 75 74 
+DHT11: 53 0 29 5 87
+Temp = 290
+Light = 854
+Light = 667
+28 28 75 76 28 74 75 78 28 28 28 28 28 28 28 31 29 27 29 74 74 75 28 78 28 28 28 28 74 28 28 78 28 75 28 74 75 75 28 75 
+DHT11: 55 0 29 9 93
+Temp = 290
+Light = 987
+Light = 1896
+Temp = 0
+Light = 4095
+Light = 1257
+Temp = 0
+Light = 0
+Light = 444
+27 28 75 75 27 28 28 78 28 28 28 28 28 28 27 31 28 28 28 75 74 75 75 77 28 27 28 27 28 74 75 32 28 75 27 75 28 75 75 28 
+DHT11: 49 0 31 6 86
+Light = 1566
+Temp = 310
+Light = 2106
+Light = 1264
+27 29 74 29 74 74 75 77 28 28 28 28 28 28 28 31 28 28 75 28 28 28 27 32 28 28 28 28 28 28 27 79 27 75 28 75 28 28 28 29 
+DHT11: 47 0 32 1 80
+Temp = 320
+Light = 728
+Light = 873
+28 27 75 28 75 75 28 78 27 28 27 29 27 29 27 32 27 28 74 28 29 28 29 31 28 28 29 28 29 75 75 30 29 74 28 74 29 28 75 75 
+DHT11: 45 0 32 6 83
+Temp = 320
+Light = 1309
+Light = 2087
+27 29 74 29 74 74 28 31 28 28 28 27 29 27 29 30 29 27 75 28 28 27 29 77 28 28 28 28 28 27 29 31 28 74 27 29 74 75 28 75 
+DHT11: 44 0 33 0 77
+Temp = 330
+Light = 1544
+Light = 379
+28 27 75 28 75 29 73 79 27 28 28 28 28 28 27 32 28 28 74 28 29 28 28 78 28 28 28 27 29 27 75 31 28 74 29 27 75 75 74 28 
+DHT11: 43 0 33 2 78
+Temp = 330
+Light = 63
+Light = 647
+Temp = 0
+Light = 2876
+Light = 4095
+Temp = 0
+Light = 1741
+Light = 0
+Temp = 0
+Light = 252
+Light = 1736
+Temp = 0
+Light = 4095
+Light = 2761
+Temp = 0
+Light = 140
+Light = 110
+Temp = 0
+Light = 1161
+Light = 4095
+Temp = 0
+Light = 3152
+Light = 473
+Temp = 0
+Light = 858
+Light = 1115
+Temp = 0
+Light = 1902
+Light = 2057
+Temp = 0
+Light = 1118
+Light = 732
+Temp = 0
+Light = 856
+Light = 1214
+Temp = 0
+Light = 1994
+Light = 1948
+Temp = 0
+Light = 1021
+Light = 752
+28 28 75 29 27 28 74 79 28 28 28 29 27 29 28 32 27 28 74 28 28 28 28 79 28 27 29 27 28 74 75 77 29 74 28 28 74 28 74 76 
+DHT11: 35 0 33 7 75
+Temp = 330
+Light = 863
+Light = 1194
+27 29 74 29 27 75 29 31 29 27 28 28 28 28 28 31 28 27 75 28 28 27 29 77 28 28 28 27 29 74 75 32 28 74 28 28 74 28 74 75 
+DHT11: 36 0 33 6 75
+Temp = 330
+Light = 1916
+Light = 1865
+28 27 75 28 28 75 28 31 28 28 27 29 27 28 27 32 27 28 74 29 27 28 28 78 27 29 27 28 28 75 28 78 29 73 29 27 75 27 75 29 
+DHT11: 36 0 33 5 74
+Temp = 330
+Light = 969
+Light = 758
+27 28 74 28 28 75 28 31 28 28 29 27 29 27 28 31 29 28 75 27 28 28 28 78 29 27 29 28 28 74 28 31 29 74 28 28 74 28 28 75 
+DHT11: 36 0 33 4 73
+Temp = 330
+Light = 952
+Light = 1466
+29 27 75 28 29 74 28 31 27 28 28 28 27 29 27 32 27 29 73 29 27 28 28 78 27 29 27 28 28 75 28 32 28 75 28 28 75 28 28 75 
+DHT11: 36 0 33 4 73
+Temp = 330
+Light = 1992
+Light = 1421
+28 28 74 28 28 75 29 31 28 27 29 27 29 27 28 31 29 27 75 27 29 27 28 78 28 27 29 27 29 27 75 77 27 75 28 28 74 28 27 29 
+DHT11: 36 0 33 3 72
+Temp = 330
+Light = 622
+Light = 731
+29 27 75 28 29 75 28 32 27 28 28 28 27 29 27 32 27 29 74 28 27 29 27 78 28 28 27 28 27 29 27 78 29 75 28 27 29 74 74 28 
+DHT11: 36 0 33 1 70
+Temp = 330
+Light = 1375
+Light = 2318
+27 28 74 29 28 75 28 31 28 27 29 27 28 28 28 31 28 28 75 28 28 27 29 77 28 28 28 27 29 27 28 78 28 74 27 29 28 75 73 29 
+DHT11: 36 0 33 1 70
+Temp = 330
+Light = 1472
+Light = 670
+29 27 75 28 29 75 27 32 27 28 28 28 27 28 27 32 27 29 74 28 27 29 27 78 28 28 27 29 27 28 27 32 27 75 28 29 28 75 28 75 
+DHT11: 36 0 33 0 69
+Temp = 330
+Light = 893
+Light = 1452
+28 28 74 29 27 75 29 30 29 28 29 27 29 27 29 31 28 28 75 27 29 27 29 31 28 28 28 28 75 28 28 78 28 74 28 28 74 75 28 75 
+DHT11: 36 0 32 9 77
+Temp = 320
+Light = 2140
+Light = 1261
+29 27 75 28 29 75 27 78 28 28 27 29 27 28 28 32 27 28 74 28 28 28 27 31 28 28 27 29 74 28 28 32 28 75 29 27 75 74 29 74 
+DHT11: 37 0 32 8 77
+Temp = 320
+Light = 687
+Light = 905
+27 29 74 29 27 75 29 78 28 28 28 27 29 27 29 30 29 27 75 28 29 27 29 31 28 27 29 27 29 74 75 79 27 75 27 29 74 75 29 28 
+DHT11: 37 0 32 7 76
+Temp = 320
+Light = 1532
+Light = 2076
+28 27 75 29 28 75 27 79 27 28 28 28 27 29 27 32 27 29 74 28 27 29 27 32 27 29 27 28 27 75 75 30 29 74 28 27 75 28 74 76 
+DHT11: 37 0 32 6 75
+Temp = 320
+Light = 1273
+Light = 717
+28 28 74 28 28 75 28 77 29 27 28 28 28 28 28 31 28 28 75 28 28 28 28 31 28 28 28 28 29 74 28 78 28 75 27 29 74 29 74 29 
+DHT11: 37 0 32 5 74
+Temp = 320
+Light = 844
+Light = 1303
+28 27 75 28 29 74 28 78 27 29 27 28 27 28 28 31 27 28 74 28 28 28 28 31 28 28 27 28 27 75 28 79 28 74 28 28 75 28 75 28 
+DHT11: 37 0 32 5 74
+Temp = 320
+Light = 2077
+Light = 1501
+27 29 28 28 28 75 27 78 29 27 28 28 28 28 29 31 28 27 29 27 75 74 75 77 27 29 27 29 27 75 74 78 27 29 27 75 75 27 75 75 
+DHT11: 5 0 15 7 27
+Temp = 150
+Light = 794
+Light = 791
+29 27 75 28 29 75 74 32 28 28 27 29 27 29 27 32 27 28 73 29 27 28 27 32 27 28 27 28 28 28 74 78 28 74 29 27 75 27 29 74 
+DHT11: 38 0 32 3 73
+Temp = 320
+Light = 1127
+Light = 1856
+27 28 74 29 27 75 75 31 28 27 29 27 29 28 28 31 28 28 75 27 28 28 28 31 28 28 28 28 29 27 75 31 28 74 27 29 74 28 28 29 
+DHT11: 38 0 32 2 72
+Temp = 320
+Light = 1807
+Light = 878
+28 28 75 29 28 75 74 78 28 28 27 29 27 29 27 32 27 28 73 29 28 28 28 32 28 28 28 28 29 28 75 31 28 74 28 28 75 27 28 75 
+DHT11: 39 0 32 2 73
+Temp = 320
+Light = 760
+Light = 1033
+Temp = 0
+Light = 1768
+Light = 1916
+Temp = 0
+Light = 825
+Light = 73
+28 29 74 28 28 75 76 31 29 27 29 27 28 28 28 31 29 27 75 27 29 27 29 30 29 27 29 27 28 28 28 31 29 74 29 27 29 74 74 29 
+DHT11: 38 0 32 0 70
+Temp = 320
+Light = 880
+Light = 3466
+29 27 75 28 29 75 73 79 27 28 28 28 27 28 27 32 27 28 74 28 28 28 28 32 28 28 28 29 28 28 29 32 28 75 28 28 28 74 75 74 
+DHT11: 39 0 32 0 71
+Temp = 320
+Light = 2734
+Light = 280
+27 28 74 28 27 75 75 78 28 27 29 27 29 27 28 31 29 27 29 74 75 75 74 79 27 28 28 28 74 28 28 78 29 74 28 28 75 74 74 76 
+DHT11: 39 0 31 9 79
+Temp = 310
+Light = 697
+Light = 1710
+28 27 75 28 29 75 74 78 27 29 27 29 27 28 28 32 27 28 27 75 75 74 74 78 28 29 28 28 75 29 27 32 27 75 28 28 74 75 75 28 
+DHT11: 39 0 31 8 78
+Temp = 310
+Light = 3742
+Light = 816
+28 28 74 29 74 28 28 31 29 27 28 28 28 28 28 31 28 28 28 74 75 74 75 78 28 28 27 29 74 28 28 31 28 75 27 29 74 75 75 75 
+DHT11: 40 0 31 8 79
+Temp = 310
+Light = 203
+Light = 1100
+29 27 75 29 75 28 27 32 28 28 27 29 27 29 27 32 27 29 27 75 74 75 75 77 28 28 28 28 28 74 75 78 27 74 28 28 74 75 75 28 
+DHT11: 40 0 31 7 78
+Temp = 310
+Light = 3307
+Light = 2511
+27 28 74 28 74 27 29 31 28 27 29 27 29 27 28 31 29 27 28 74 75 74 75 78 28 28 27 29 27 75 74 78 28 74 29 27 75 74 75 28 
+DHT11: 40 0 31 7 78
+Temp = 310
+Light = 301
+Light = 266
+28 27 74 29 75 28 27 31 28 28 28 28 27 28 27 32 28 28 27 75 73 75 75 78 28 27 29 27 29 74 74 32 29 75 27 28 74 75 28 75 
+DHT11: 40 0 31 6 77
+Temp = 310
+Light = 1358
+Light = 3482
+27 28 74 29 74 28 28 31 29 27 28 28 28 28 28 31 28 28 28 74 75 74 75 79 27 29 28 28 28 75 27 78 28 75 28 27 75 74 29 28 
+DHT11: 40 0 31 5 76
+Temp = 310
+Light = 2395
+Light = 268
+29 27 75 28 74 29 27 32 27 29 27 29 27 28 27 32 27 29 27 75 74 75 75 77 28 28 28 28 28 74 28 78 28 75 27 28 74 75 27 29 
+DHT11: 40 0 31 5 76
+Temp = 310
+Light = 334
+Light = 1288
+28 28 74 29 27 75 75 77 29 27 28 28 28 28 28 31 29 28 28 74 75 75 74 79 28 28 28 28 28 75 28 31 28 74 29 27 75 28 75 27 
+DHT11: 39 0 31 4 74
+Temp = 310
+Light = 3039
+Light = 2686
+Light = 555
+Temp = 0
+Light = 246
+Light = 712
+29 29 74 29 74 27 29 77 28 28 28 28 28 28 29 31 28 28 28 74 75 74 74 78 27 29 27 29 27 29 74 79 28 74 29 27 75 27 75 75 
+DHT11: 41 0 31 3 75
+Temp = 310
+Light = 2263
+Light = 4095
+Temp = 0
+Light = 2621
+Light = 379
+Temp = 0
+Light = 187
+Light = 620
+Temp = 0
+Light = 2812

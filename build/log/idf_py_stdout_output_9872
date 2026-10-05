@@ -1,0 +1,71 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.3.1\WorkSpace\Embedded_class\midterm_project\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5180 bytes. 0x2e80 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/sensor.c.obj
+In file included from D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/main.h:22,
+                 from D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/sensor.h:1,
+                 from D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/sensor.c:1:
+D:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/sensor.c: In function 'ldr_init':
+D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/sensor.c:8:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+    8 |     adc1_config_channel_atten(LDR_ADC_CHANNEL, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from D:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from D:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:15:
+D:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable midterm_project.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/build/midterm_project.bin
+[7/8] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.3.1\WorkSpace\Embedded_class\midterm_project\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/build/partition_table/partition-table.bin D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/build/midterm_project.bin"
+midterm_project.bin binary size 0x3a5a0 bytes. Smallest app partition is 0x100000 bytes. 0xc5a60 bytes (77%) free.
+[7/8] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && D:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=D:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;D:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;-esptool.py --chip esp32c3 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 midterm_project.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM3
+Connecting....
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE, Embedded Flash 4MB (XMC)
+Crystal is 40MHz
+MAC: f0:f5:bd:fb:0f:80
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0004afff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 20864 bytes to 12768...
+Writing at 0x00000000... (100 %)
+Wrote 20864 bytes (12768 compressed) at 0x00000000 in 0.7 seconds (effective 233.3 kbit/s)...
+Hash of data verified.
+Compressed 239008 bytes to 122699...
+Writing at 0x00010000... (12 %)
+Writing at 0x0001c1cf... (25 %)
+Writing at 0x00023136... (37 %)
+Writing at 0x0002ab75... (50 %)
+Writing at 0x00032315... (62 %)
+Writing at 0x00038f68... (75 %)
+Writing at 0x0003fc9c... (87 %)
+Writing at 0x0004693d... (100 %)
+Wrote 239008 bytes (122699 compressed) at 0x00010000 in 4.1 seconds (effective 461.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 322.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+-chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/build -P D:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"

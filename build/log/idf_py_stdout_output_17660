@@ -1,0 +1,350 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Sep 30 2026 10:11:49[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09064h ( 36964) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001908c vaddr=3fc8b400 size=01394h (  5012) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001a428 vaddr=40380000 size=05bf0h ( 23536) load[0m
+[0;32mI (121) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=169c0h ( 92608) map[0m
+[0;32mI (139) esp_image: segment 4: paddr=000369e8 vaddr=40385bf0 size=05794h ( 22420) load[0m
+[0;32mI (147) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (147) boot: Disabling RNG early entropy source...[0m
+[0;32mI (159) cpu_start: Unicore app[0m
+[0;32mI (168) cpu_start: Pro cpu start user code[0m
+[0;32mI (168) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (168) app_init: Application information:[0m
+[0;32mI (171) app_init: Project name:     midterm_project[0m
+[0;32mI (176) app_init: App version:      v5.3.1-dirty[0m
+[0;32mI (182) app_init: Compile time:     Oct  2 2026 09:05:21[0m
+[0;32mI (188) app_init: ELF file SHA256:  3940f01f7...[0m
+[0;32mI (193) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (198) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (203) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (208) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (213) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (220) heap_init: At 3FC8D690 len 00032970 (202 KiB): RAM[0m
+[0;32mI (226) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (233) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (240) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (247) spi_flash: detected chip: generic[0m
+[0;32mI (251) spi_flash: flash io: dio[0m
+[0;33mW (255) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (268) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (276) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (283) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+Light = 4095
+Light = 1902
+Light = 423
+Light = 2076
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+Light = 42
+Light = 2175
+Light = 3019
+Light = 3904
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x8 (TG1WDT_SYS_RST),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403808ac
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (35) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time Sep 30 2026 10:11:49[0m
+[0;32mI (35) boot: chip revision: v0.4[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;33mW (53) boot.esp32c3: PRO CPU has been reset by WDT.[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (64) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (75) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (90) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09064h ( 36964) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=0001908c vaddr=3fc8b400 size=01394h (  5012) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=0001a428 vaddr=40380000 size=05bf0h ( 23536) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=169c0h ( 92608) map[0m
+[0;32mI (150) esp_image: segment 4: paddr=000369e8 vaddr=40385bf0 size=05794h ( 22420) load[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     midterm_project[0m
+[0;32mI (187) app_init: App version:      v5.3.1-dirty[0m
+[0;32mI (192) app_init: Compile time:     Oct  2 2026 09:05:21[0m
+[0;32mI (198) app_init: ELF file SHA256:  3940f01f7...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (213) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FC8D690 len 00032970 (202 KiB): RAM[0m
+[0;32mI (237) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (244) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (251) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (258) spi_flash: detected chip: generic[0m
+[0;32mI (261) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (279) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (287) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (294) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (301) main_task: Calling app_main()[0m
+Light = 4095
+Light = 72
+Light = 93
+Light = 763
+Light = 4095
+Light = 571
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 2666
+Light = 425
+Light = 1372
+Light = 0
+Light = 88
+Light = 315
+Light = 0
+Light = 422
+Light = 26
+Light = 428
+Light = 25
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 2795
+Light = 0
+Light = 3
+Light = 124
+Light = 300
+Light = 588
+Light = 936
+Light = 1246
+Light = 1676
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 3435
+Light = 0
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 680
+Light = 1980
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+Light = 57
+Light = 0
+Light = 0
+Light = 0
+Light = 1085
+Light = 682
+Light = 0
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+Light = 0
+Light = 0
+Light = 0
+Light = 0
+Light = 0
+Light = 207
+Light = 270
+Light = 458
+Light = 3019
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+Light = 0
+Light = 152
+Light = 218
+Light = 287
+Light = 584
+Light = 650
+Light = 445
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+Light = 0
+Light = 120
+Light = 238
+Light = 475
+Light = 1002
+Light = 1050
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+Light = 0
+Light = 0
+Light = 480
+Light = 879
+Light = 614
+Light = 2158
+Light = 2157
+Light = 2239
+Light = 3240
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 1322
+Light = 4095
+Light = 478
+Light = 713
+Light = 1104
+Light = 1303
+Light = 1485
+Light = 1661
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 1948
+Light = 254
+Light = 747
+Light = 1223
+Light = 1599
+Light = 1929
+Light = 2272
+Light = 2471
+Light = 2670
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 554
+Light = 583
+Light = 1497
+Light = 1916
+Light = 2343
+Light = 2880
+Light = 2830
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+Light = 0
+Light = 889
+Light = 1066
+Light = 814
+Light = 1623
+Light = 1855
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+Light = 0
+Light = 123
+Light = 302
+Light = 576
+Light = 1023
+Light = 1337
+Light = 1599
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 3341
+Light = 0
+Light = 0
+Light = 252
+Light = 347
+Light = 557
+Light = 1197
+Light = 1359
+Light = 1645
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 4095
+Light = 0
+Light = 0
+Light = 126
+Light = 304
+Light = 428
+Light = 604
+Light = 1194
+Light = 1373
+Light = 2302

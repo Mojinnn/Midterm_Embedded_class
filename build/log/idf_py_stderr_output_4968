@@ -1,0 +1,102 @@
+fatal: no submodule mapping found in .gitmodules for path 'WorkSpace/ESP32-CAM-ESP-IDF-Live-Streaming-Web-Server'
+CMake Error at D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/component.cmake:225 (message):
+  CMake Warning (dev) at build_properties.temp.cmake:8:
+
+    Syntax Warning in cmake code at column 106
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/scripts/component_get_requirements.cmake:3 (include)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Warning (dev) at
+  D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/CMakeLists.txt:1:
+
+
+    Syntax Warning in cmake code at column 48
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/scripts/component_get_requirements.cmake:127 (__component_get_requirements)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Warning (dev) at
+  D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/CMakeLists.txt:1:
+
+
+    Syntax Warning in cmake code at column 59
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/scripts/component_get_requirements.cmake:127 (__component_get_requirements)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Warning (dev) at
+  D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/CMakeLists.txt:2:
+
+
+    Syntax Warning in cmake code at column 35
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/scripts/component_get_requirements.cmake:127 (__component_get_requirements)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Error at
+  D:/Espressif/frameworks/esp-idf-v5.3.1/WorkSpace/Embedded_class/midterm_project/main/CMakeLists.txt:3:
+
+
+    Parse error.  Function missing ending ")".  Instead found unterminated
+    string with text ")
+
+  
+
+    ".
+
+  Call Stack (most recent call first):
+
+    D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/scripts/component_get_requirements.cmake:127 (__component_get_requirements)
+
+  
+
+  
+
+Call Stack (most recent call first):
+  D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/build.cmake:586 (__component_get_requirements)
+  D:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed
